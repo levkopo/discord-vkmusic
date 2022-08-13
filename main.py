@@ -17,6 +17,7 @@ with open('config.ini', 'rb') as fh:
 config.read("config.ini", encoding=detector.result["encoding"])
 app_id = '543726720289734656'
 
+
 def run():
     try:
         rpc_obj = rpc.DiscordIpcClient.for_platform(app_id)
